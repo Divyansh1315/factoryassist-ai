@@ -1,0 +1,209 @@
+/* 
+   FactoryAssist AI - Global Theme
+ */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+/* 
+   Theme Variables
+ */
+
+:root {
+
+    /* Brand Colors */
+    --primary: #2563EB;
+    --primary-dark: #1D4ED8;
+
+    /* Backgrounds */
+    --background: #F5F7FA;
+    --card: #FFFFFF;
+    --sidebar: #0F172A;
+
+    /* Text */
+    --text-primary: #1F2937;
+    --text-secondary: #374151;
+    --text-muted: #6B7280;
+
+    /* Borders */
+    --border: #E5E7EB;
+
+    /* Shadows */
+    --shadow-light: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0px 8px 22px rgba(0, 0, 0, 0.12);
+
+    /* Radius */
+    --radius: 14px;
+
+    /* Transition */
+    --transition: all 0.25s ease;
+}
+
+
+/* 
+   Hide Default Streamlit Elements
+ */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+
+/* 
+   App Layout
+ */
+
+.stApp {
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+}
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+/* 
+   Typography
+ */
+
+h1 {
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h2,
+h3 {
+    color: var(--text-secondary);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* 
+   Sidebar
+ */
+
+[data-testid="stSidebar"] {
+    background: var(--sidebar);
+}
+
+[data-testid="stSidebar"] * {
+    color: white;
+}
+
+
+/* 
+   Base Card
+*/
+
+.card {
+
+    background: var(--color-surface);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+
+    transition: var(--transition);
+
+}
+
+.card:hover {
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+/* 
+   Metric Card
+*/
+
+.metric-card {
+
+    border-left: 5px solid var(--color-primary);
+
+}
+
+.metric-title {
+
+    font-size: 15px;
+
+    color: var(--color-text-light);
+
+    font-weight: 600;
+
+}
+
+.metric-value {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: var(--color-primary);
+
+}
+
+.metric-delta {
+
+    margin-top: 8px;
+
+    font-size: 13px;
+
+    color: var(--color-text-light);
+
+    font-weight: 500;
+
+}
+
+
+/* 
+   Chart Card
+*/
+
+.chart-header {
+
+    margin-bottom: 15px;
+
+}
+
+.chart-title {
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: var(--color-text);
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.chart-subtitle {
+
+    margin-top: 4px;
+
+    color: var(--color-text-light);
+
+    font-size: 14px;
+
+}
