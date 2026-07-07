@@ -37,6 +37,24 @@
 
     /* Transition */
     --transition: all 0.25s ease;
+
+    /* Status Colors */
+
+    --status-success-bg: #DCFCE7;
+    --status-success-text: #166534;
+
+    --status-warning-bg: #FEF3C7;
+    --status-warning-text: #92400E;
+
+    --status-danger-bg: #FEE2E2;
+    --status-danger-text: #991B1B;
+
+    --status-info-bg: #DBEAFE;
+    --status-info-text: #1D4ED8;
+
+    --status-neutral-bg: #E5E7EB;
+    --status-neutral-text: #374151;
+
 }
 
 
@@ -205,5 +223,63 @@ h3 {
     color: var(--color-text-light);
 
     font-size: 14px;
+
+}
+
+/* 
+   Table Card
+ */
+
+.table-card {
+
+    padding: 0;
+
+}
+
+.table-header {
+
+    padding: 20px 20px 10px 20px;
+
+}
+
+.table-title {
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: var(--color-text);
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.table-subtitle {
+
+    margin-top: 4px;
+
+    color: var(--color-text-light);
+
+    font-size: 14px;
+
+}
+
+/* 
+   Status Badge
+*/
+
+.status-badge {
+
+    display: inline-block;
+
+    padding: 4px 12px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-align: center;
 
 }

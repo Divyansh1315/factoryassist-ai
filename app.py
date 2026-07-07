@@ -1,30 +1,26 @@
 from pathlib import Path
 import streamlit as st
 
+from pages.dashboard import render_dashboard
+
 
 def load_css():
     css_path = Path("assets/styles.css")
     with open(css_path) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.set_page_config(
-    page_title="FactoryAssist AI",
-    page_icon="🏭",
-    layout="wide",
-)
 
-load_css()
+def main():
+    st.set_page_config(
+        page_title="FactoryAssist AI",
+        page_icon="🏭",
+        layout="wide",
+    )
 
-st.title("🏭 FactoryAssist AI")
+    load_css()
 
-st.markdown(
-    """
-    Welcome to FactoryAssist AI!
+    render_dashboard()
 
-    Use the navigation menu on the left to explore the application.
 
-    All modules are currently under development.
-    """
-)
-
-st.success("Project initialized successfully.")
+if __name__ == "__main__":
+    main()
